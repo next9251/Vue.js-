@@ -6,6 +6,7 @@
 </template>
 
 <script>
+import axios from "axios";
 export default {
   data(){
     return{
@@ -13,13 +14,12 @@ export default {
     }
   },
   methoods:{
-    search(){
-      async created() {
-        let data =await axios.get ()
-      }
-    }
+    search() {
+      let data = axios.get(VTgaCQkNgIB8UbxF3gz3Y21Lh1lVQAPHDNZED1a);
+      console.log(data);
+    },
   }
-};
+};  
 </script>
 
 

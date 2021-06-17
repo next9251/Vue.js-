@@ -1,20 +1,10 @@
-import Vue from "vue";
-import App from "App.vue";
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 
-Vue.use(VueRouter);
+Vue.use(VueAxios, axios);
 
-const router = [
-  {
-    path: "/",
-    name: "About",
-    component: About,
-  }
-];
+new Vue({
+  render: (h) => h(App),
+}).$mount("#app");
 
-const router = new VueRouter({
-  mode: "history",
-  base: process.env.BASE_URL,
-  routes,
-});
 
-export default router;
