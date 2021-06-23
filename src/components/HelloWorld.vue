@@ -18,7 +18,7 @@ export default {
   },
   methoods:{
     search() {
-      let data = axios.get("https://apis.postcode-jp.com/api/v4/postcodes/1000001apikey=VTgaCQkNgIB8UbxF3gz3Y21Lh1lVQAPHDNZED1a");
+      let data = axios.get("https://apis.postcode-jp.com/api/v4/postcodes/?apikey=VTgaCQkNgIB8UbxF3gz3Y21Lh1lVQAPHDNZED1a");
       console.log(data);
     },
   }
