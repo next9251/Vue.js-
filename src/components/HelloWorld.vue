@@ -16,7 +16,7 @@ export default {
       address:""
     }
   },
-  methoods:{
+  methods:{
     search() {
       let data = axios.get("https://apis.postcode-jp.com/api/v4/postcodes/?apikey=VTgaCQkNgIB8UbxF3gz3Y21Lh1lVQAPHDNZED1a");
       console.log(data);
